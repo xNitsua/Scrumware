@@ -5,6 +5,7 @@ using UnityEngine;
 public class projectile : MonoBehaviour
 {
     public float moveSpeed;
+    public GameObject explosionPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +20,14 @@ public class projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "Enemy")
         {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
         if(other.gameObject.tag == "Boundary")
         {
             Destroy(gameObject);
+            Destroy(explosionPrefab);
         }
     }
 }
