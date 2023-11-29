@@ -6,10 +6,10 @@ public class projectile : MonoBehaviour
 {
     public float moveSpeed;
     public GameObject explosionPrefab;
-    // Start is called before the first frame update
+    private pointManager pointManager;
     void Start()
     {
-        
+        pointManager = GameObject.Find("PointManager").GetComponent<pointManager>();
     }
 
     // Update is called once per frame
@@ -22,7 +22,9 @@ public class projectile : MonoBehaviour
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
+            
             Destroy(gameObject);
+            pointManager.UpdateScore(50);
         }
         if(other.gameObject.tag == "Boundary")
         {

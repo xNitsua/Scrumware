@@ -26,4 +26,15 @@ public class NewBehaviourScript : MonoBehaviour
 
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.gameObject.tag == "Enemy Projectile"){
+            Destroy(collision.gameObject);
+            lives -= 1;
+            if (lives <= 0){
+                Destroy(gameObject);
+            }
+
+        }
+        
+    }
 }
