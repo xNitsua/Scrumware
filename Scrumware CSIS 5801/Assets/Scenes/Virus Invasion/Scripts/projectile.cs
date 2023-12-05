@@ -29,7 +29,7 @@ public class projectile : MonoBehaviour
         if(other.gameObject.tag == "Boundary")
         {
             Destroy(gameObject);
-            Destroy(explosionPrefab);
+            
         }
     }
 }

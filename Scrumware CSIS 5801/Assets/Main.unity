@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   routerDamagePrefab: {fileID: 3003963881965581460, guid: d6eb1be8ec4f35c479bf3f3477f89c92, type: 3}
-  routerLives: 2
+  routerLives: 3
 --- !u!50 &19616314
 Rigidbody2D:
   serializedVersion: 4
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   routerDamagePrefab: {fileID: 3003963881965581460, guid: d6eb1be8ec4f35c479bf3f3477f89c92, type: 3}
-  routerLives: 2
+  routerLives: 3
 --- !u!50 &602866667
 Rigidbody2D:
   serializedVersion: 4
@@ -1782,7 +1782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   routerDamagePrefab: {fileID: 3003963881965581460, guid: d6eb1be8ec4f35c479bf3f3477f89c92, type: 3}
-  routerLives: 2
+  routerLives: 3
 --- !u!50 &1509470634
 Rigidbody2D:
   serializedVersion: 4
@@ -2203,7 +2203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   routerDamagePrefab: {fileID: 3003963881965581460, guid: d6eb1be8ec4f35c479bf3f3477f89c92, type: 3}
-  routerLives: 2
+  routerLives: 3
 --- !u!1001 &1795225252
 PrefabInstance:
   m_ObjectHideFlags: 0

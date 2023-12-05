@@ -5,9 +5,10 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public int lives = 1;
+    private pointManager pointManager;
     void Start()
     {
-        
+         pointManager = GameObject.Find("PointManager").GetComponent<pointManager>();
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
             lives -= 1;
             if (lives <= 0){
                 Destroy(gameObject);
+                pointManager.UpdateScore(-100);
             }
 
         }
@@ -32,6 +34,7 @@ public class NewBehaviourScript : MonoBehaviour
             lives -= 1;
             if (lives <= 0){
                 Destroy(gameObject);
+                pointManager.UpdateScore(-100);
             }
 
         }
